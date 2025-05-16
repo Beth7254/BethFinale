@@ -1,0 +1,148 @@
+﻿@model JwtAuthDemo.Models.Info.WorkInfo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>WorkInfo</h4>
+<hr />
+<div class="row">
+    <div class="ct">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Employmentstatus" class="control-label"></label>
+                <input asp-for="Employmentstatus" class="form-control" />
+                <span asp-validation-for="Employmentstatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateHired" class="control-label"></label>
+                <input asp-for="DateHired" class="form-control" />
+                <span asp-validation-for="DateHired" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Position" class="control-label"></label>
+                <input asp-for="Position" class="form-control" />
+                <span asp-validation-for="Position" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reportorial" class="control-label"></label>
+                <input asp-for="Reportorial" class="form-control" />
+                <span asp-validation-for="Reportorial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<body>
+    <a href="/Home/Index" target="_blank" class="button-link" rel="noopener noreferrer">
+        Back to List
+    </a>
+</body>
+<body>
+    <a href="/PersonalInfo/Create" target="_blank" class="button-link" rel="noopener noreferrer">
+        Continue
+    </a>
+</body>
+
+
+
+<style>
+
+    .ct {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 20px;
+        padding-left: 20PX;
+        color: black;
+        background: #87B7D5;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px #9bd4d6;
+        columns: 2;
+        column-gap: 50px;
+    }
+
+
+    h2 {
+        color: #e59500;
+        font-size: 40px;
+        font-family: Helvetica,sans-serif;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+
+    label {
+        margin-top: 10px;
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        color: #555;
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="file"] {
+        width: 100%;
+        max-width: 1000px;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        padding: 10PX 10px 10PX 10px;
+        margin: 20px 0;
+        border: 3px #373738;
+        border-radius: 5px;
+        font-size: 18px;
+        font: optional;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        columns: 2;
+        column-gap: 50px;
+    }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        input[type="file"]:focus {
+            border-color: #373738;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            outline: none;
+        }
+
+    a.button-link {
+        display: inline-block;
+        background: gray;
+        color: white;
+        font-weight: 600;
+        padding: 14px 28px;
+        text-decoration: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(51, 102, 255, 0.4);
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+        user-select: none;
+        font-size: 1.125rem;
+    }
+
+        a.button-link:hover,
+        a.button-link:focus {
+            background: linear-gradient(135deg, #3366ff, #5a8dee);
+            box-shadow: 0 6px 18px rgba(51, 102, 255, 0.6);
+            outline: none;
+        }
+
+        a.button-link:active {
+            transform: translateY(2px);
+            box-shadow: 0 3px 9px rgba(51, 102, 255, 0.5);
+        }
+</style>
+
+
+
+

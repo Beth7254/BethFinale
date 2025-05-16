@@ -1,0 +1,169 @@
+﻿@model JwtAuthDemo.Models.Info.Educationalbackground
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Educationalbackground</h4>
+<hr />
+<div class="row">
+    <div class="ct">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ElementarySchool" class="control-label"></label>
+                <input asp-for="ElementarySchool" class="form-control" />
+                <span asp-validation-for="ElementarySchool" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElementaryYearAttended" class="control-label"></label>
+                <input asp-for="ElementaryYearAttended" class="form-control" />
+                <span asp-validation-for="ElementaryYearAttended" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HighSchool" class="control-label"></label>
+                <input asp-for="HighSchool" class="form-control" />
+                <span asp-validation-for="HighSchool" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HighSchoolYearAttended" class="control-label"></label>
+                <input asp-for="HighSchoolYearAttended" class="form-control" />
+                <span asp-validation-for="HighSchoolYearAttended" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CollegeSchool" class="control-label"></label>
+                <input asp-for="CollegeSchool" class="form-control" />
+                <span asp-validation-for="CollegeSchool" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CollegeYearAttended2" class="control-label"></label>
+                <input asp-for="CollegeYearAttended2" class="form-control" />
+                <span asp-validation-for="CollegeYearAttended2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DegreeReceived" class="control-label"></label>
+                <input asp-for="DegreeReceived" class="form-control" />
+                <span asp-validation-for="DegreeReceived" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SpecialSkills" class="control-label"></label>
+                <input asp-for="SpecialSkills" class="form-control" />
+                <span asp-validation-for="SpecialSkills" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Others" class="control-label"></label>
+                <input asp-for="Others" class="form-control" />
+                <span asp-validation-for="Others" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<body>
+    <a href="/Home/Index" target="_blank" class="button-link" rel="noopener noreferrer">
+        Back to List
+    </a>
+</body>
+<body>
+    <a href="/PersonalInfo/Create" target="_blank" class="button-link" rel="noopener noreferrer">
+        Continue
+    </a>
+</body>
+
+
+
+<style>
+
+    .ct {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 20px;
+        padding-left: 20PX;
+        color: black;
+        background: #87B7D5;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px #9bd4d6;
+        columns: 2;
+        column-gap: 50px;
+    }
+
+
+    h2 {
+        color: #e59500;
+        font-size: 40px;
+        font-family: Helvetica,sans-serif;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+
+    label {
+        margin-top: 10px;
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        color: #555;
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="file"] {
+        width: 100%;
+        max-width: 1000px;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        padding: 10PX 10px 10PX 10px;
+        margin: 20px 0;
+        border: 3px #373738;
+        border-radius: 5px;
+        font-size: 18px;
+        font: optional;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        columns: 2;
+        column-gap: 50px;
+    }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        input[type="file"]:focus {
+            border-color: #373738;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            outline: none;
+        }
+
+    a.button-link {
+        display: inline-block;
+        background: gray;
+        color: white;
+        font-weight: 600;
+        padding: 14px 28px;
+        text-decoration: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(51, 102, 255, 0.4);
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+        user-select: none;
+        font-size: 1.125rem;
+    }
+
+        a.button-link:hover,
+        a.button-link:focus {
+            background: linear-gradient(135deg, #3366ff, #5a8dee);
+            box-shadow: 0 6px 18px rgba(51, 102, 255, 0.6);
+            outline: none;
+        }
+
+        a.button-link:active {
+            transform: translateY(2px);
+            box-shadow: 0 3px 9px rgba(51, 102, 255, 0.5);
+        }
+</style>
